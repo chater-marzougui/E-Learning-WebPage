@@ -24,7 +24,7 @@
   </p>
   <br><br>
   <a href="https://github.com/chater-marzougui/E-Learning-WebPage">
-    <img src="./assets/_images/project-preview.png" alt="Logo" width="70%">
+    <img src="./_images/project-preview.png" alt="Logo" width="70%">
   </a>
 </div>
 
