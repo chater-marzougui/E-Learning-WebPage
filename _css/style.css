@@ -1,0 +1,90 @@
+header {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .headers {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+/* General styling for body, header, and links */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+header h1 {
+    font-size: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#bell:hover {
+    animation: shake 0.7s infinite linear; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#gologin {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 50px auto;
+}
+
+#gologin h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#gologin p {
+    font-size: 16px;
+    color: #666;
+}
+
+#gologin a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#gologin a:hover {
+    text-decoration: underline;
+}

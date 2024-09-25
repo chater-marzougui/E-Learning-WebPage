@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="./_css/style.css">
+    <link rel="stylesheet" href="./_css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./_css/contact.css"/>
+</head>
+<body>
+    <header>
+        <a href="./home.html">
+            <img src="./_images/Logo.png" alt="Logo">
+        </a>
+        <h1>Our Services</h1>
+        <a href="./notifications.html">
+            <img id="bell" src="./_images/bell.svg" alt="Notifications">
+        </a>
+    </header>
+
+    <main id="main">
+        <section>
+            <h2>Project Assistance</h2>
+            <p>Our team provides expert project assistance for academic and professional projects. Whether you need help with planning, execution, or review, we are here to guide you through every step of your project. We specialize in technology, engineering, and management projects.</p>
+            <img src="https://oncourseworkshop.com/wp-content/uploads/2019/11/National-Workshop-1024x670-2.jpg" alt="Project Assistance">
+        </section>
+
+        <section>
+            <h2>Workshops</h2>
+            <p>We regularly host workshops on various topics, including web development, software engineering, robotics, and more. These hands-on sessions are designed to give you practical skills that you can apply immediately.</p>
+            <iframe src="https://www.youtube.com/embed/WR1ydijTx5E" title="Workshops Overview" frameborder="0" allowfullscreen width="560" height="315" ></iframe>
+        </section>
+
+        <section>
+            <h2>Training Sessions</h2>
+            <p>Our training sessions are geared towards both beginners and professionals looking to upgrade their skills. Topics range from programming languages to specific frameworks like React, Angular, and Node.js. Each session includes a combination of theory and practical exercises.</p>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/xyz123/view">Training Guide (PDF)</a></li>
+                <li><a href="./_docs/training_schedule.pdf" download>Download Training Schedule</a></li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contact Us</h1>
+            <p>We're always open to new opportunities and conversations. Feel free to reach out with any questions, comments, or inquiries.</p>
+            <div class="contact-content">
+                <form class="contact-form" ; onsubmit="sendEmail() ; reset() ; return false ; ">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="form-group" id="email">
+                        <label for="emailInput">Email:</label>
+                        <input type="email" id="emailInput" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-group" id="subject">
+                        <label for="subjectvalue">Subject:</label>
+                        <input type="text" id="subjectvalue" name="subjectvalue" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="main-btn"><h3><i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;  Send Message</h3></button>
+                </form>
+                <div class="direct-contact-container">
+                    <ul class="contact-list">
+                      <li class="list-item"><i class="fa-solid fa-location-dot fa-2x"><span class="contact-text place">El Ghazela, Ariana</span></i></li>
+                      <li class="list-item"><i class="fa-solid fa-phone fa-2x"><span class="contact-text phone"><a href="tel:+216 28 356 927" title="Give me a call">+216 28 356 927</a></span></i></li>
+                      <li class="list-item"><i class="fa-regular fa-envelope fa-2x"><span class="contact-text gmail"><a class="emailtext" href="mailto:chater.mrezgui2002@gmail.com" title="Send me an email">supcom@supcom.tn</a></span></i></li>
+                    </ul>
+                    <hr>
+                    <div class="copyright">&copy; ALL RIGHTS RESERVED</div>
+                </div>
+            </div>
+            <footer>
+                <p>© SUP'COM, 2024-2025</p>
+            </footer>
+        </section>
+    </main>
+
+    <div id="gologin"> 
+        <h2>Log In to view Courses</h2>
+        <p>Don't have an account? <a href="./signup.html">Sign Up</a></p>
+    </div>
+
+    <script src="./_scripts/mail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="module" src="./_scripts/onlyforloggedin.js"></script>
+</body>
+</html>

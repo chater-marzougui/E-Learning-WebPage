@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="./_css/style.css">
+    <link rel="stylesheet" href="./_css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <a href="./home.html">
+            <img src="./_images/Logo.png" alt="Logo">
+        </a>
+        <h1>Login</h1>
+        <a href="./notifications.html">
+            <img id="bell" src="./_images/bell.svg" alt="Bell">
+        </a>
+    </header>
+    <main>
+        <form action="" method="POST">
+            <label for="email">Email (must be @supcom.tn)</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@supcom\.tn" placeholder="Enter your email">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            
+            <a style="padding-bottom: 10px;color:blueviolet" href="./forgot-password.html">Forgot Password?</a>
+            
+            <button type="submit">Log In</button>
+            <p>Don't have an account? <a href="./signup.html">Sign Up</a></p>
+        </form>
+    </main>
+
+    <script type="module" src="./_scripts/firebase.js"></script>
+    <script type="module" src="./_scripts/signin.js"></script>
+</body>
+</html>

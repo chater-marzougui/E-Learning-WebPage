@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./_css/style.css">
+    <link rel="stylesheet" href="./_css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <a href="./home.html">
+            <img src="./_images/Logo.png" alt="Logo">
+        </a>
+        <h1>Sign Up</h1>
+        <a href="./notifications.html">
+            <img id="bell" src="./_images/bell.svg" alt="Bell">
+        </a>
+    </header>
+
+    <main>
+        <form action="" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required minlength="3" placeholder="Enter your first name">
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required minlength="3" placeholder="Enter your last name">
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{8}" placeholder="Enter your phone number">
+            
+            <label for="email">Email (must be @supcom.tn)</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+\-]+@[supcom]+\.[tn]{2,}$" placeholder="Enter your email">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required 
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" 
+                   title="Password must contain at least one number, one uppercase and lowercase letter, one special character, and be at least 8 characters long."
+                   placeholder="Enter your password">
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+            
+            <label>Role:</label>
+            <label><input type="radio" name="role" value="Teacher" required> Teacher</label>
+            <label><input type="radio" name="role" value="Student" required> Student</label>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="./login.html">Log in</a></p>
+    </main>
+
+    <script type="module" src="./_scripts/firebase.js"></script>
+    <script type="module" src="./_scripts/signup.js"></script>
+</body>
+</html>

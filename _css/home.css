@@ -1,0 +1,168 @@
+/* Main Section Styling */
+main {
+    padding: 20px;
+}
+
+.about, .courses, .services, .best-categories {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #b8b8b8;
+    border-radius: 10px;
+}
+
+.about h2, .courses h2, .services h2, .best-categories h2 {
+    font-size: 28px;
+    color: #007bff;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+ul li a {
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 0 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.direct-contact-container {
+    max-width: 400px;
+}
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #fafafa;
+  }
+
+  .place {
+    margin-left: 42px;
+  }
+  
+  .phone {
+    margin-left: 36px;
+  }
+  
+  .gmail {
+    margin-left: 33px;
+  }
+  
+  .contact-text a {
+    color: #fafafa;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    width: 70%;
+    border-color: rgba(255,255,255,.6);
+  }
+
+
+.footer-info, .footer-logos, .footer-map {
+    width: 30%;
+}
+
+.footer-info h3 {
+    font-size: 22px;
+}
+
+.footer-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-logos img {
+    width: 140px;
+    margin: 10px;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.footer-map iframe {
+    margin-top: 10px;
+    border: none;
+}
+
+.footer-map a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+small {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course</title>
+    <link rel="stylesheet" href="./_css/style.css">
+    <link rel="stylesheet" href="./_css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <a href="./home.html">
+            <img src="./_images/Logo.png" alt="Logo">
+        </a>
+        <h1>HTML Course</h1>
+        <a href="./notifications.html">
+            <img id="bell" src="./_images/bell.svg" alt="Bell">
+        </a>
+    </header>
+
+    <main id="main">
+        <h2>Description</h2>
+        <p>This course introduces HTML (HyperText Markup Language) used to create the structure of web pages. You'll learn how to structure your website with elements, forms, and media integration.</p>
+
+        <h3>Tutorial</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allowfullscreen></iframe>
+        
+        <h3>HTML Structure Diagram</h3>
+        <img src="https://aptlearn.io/wp-content/uploads/2022/11/3A72FC98-22C5-4BA7-AF85-C18BA8EEB81A.png" alt="HTML Structure Diagram">
+        
+        <h3>Documents</h3>
+        <div class="docs">
+            <a href="https://www.w3.org/TR/html52/" target="_blank">HTML5 Specification<i style="padding: 10px;" class="fa-solid fa-up-right-from-square"></i></a>
+            <embed src="./_pdf/html_tutorial.pdf" width="100%" height="600" type="application/pdf">
+        </div>
+    </main>
+
+    <div id="gologin"> 
+        <h2>Log In to view Courses</h2>
+        <p>Don't have an account? <a href="./signup.html">Sign Up</a></p>
+    </div>
+
+    <footer>
+        <a href="./reference.html">References</a>
+    </footer>
+    
+    <script type="module" src="./_scripts/onlyforloggedin.js"></script>
+</body>
+</html>
